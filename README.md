@@ -18,7 +18,5 @@ Ada is fine-tuned using two approaches and benchmarked across four metrics.  Det
 
 In conclusion, our results show that content pertaining to IO accounts is noisy, warranting further investigation beyond their tweet content to detect such operations. Our model performance in IO content detection improves when they are trained on two IOs (REA and CNHU) compared to one (REA), though they are more effective at identifying non-IO tweets than IO tweets, as indicated by the relatively high precision combined with low recall. This can be attributed to the noisy content of the IO data, which includes many trivial tweets.
 
-To enhance our models, we need more diverse training data that better aligns with the test data distribution, or a larger dataset containing a sufficient number of tweets in various languages, enabling the model to learn and generalize to unseen tweets. In general, many factors outside of tweet content could impact the detection of information operations, such as account activity, spam level, interactions with other accounts, among others.
-
-Future work may consider these aspects in their IO detection analysis for improved performance.
+In general, many factors outside of tweet content could impact the detection of information operations, such as account activity, spam level, interactions with other accounts, among others. Future work may consider these aspects in their IO detection analysis for improved performance.
 
