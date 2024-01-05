@@ -11,7 +11,7 @@ Our project's primary goal is to create a classification model to identify state
 
 ## Experiments
 
-We fine-tune Ada and BERT using two approaches and benchmark their performance across four metrics. Additionally, we simulate a real-world scenario through a third approach to evaluate BERT's performance. We experiment with various data preprocessing methods and record their impact on BERT. Details of our training data construction and experimental setup are outlined below.
+We fine-tune Ada and BERT using two approaches and benchmark their performance across four metrics. Additionally, we simulate a real-world scenario through a third approach to evaluate BERT's performance. We experiment with various data preprocessing methods and record their impact on BERT. Details of our training data construction and experimental setup, as well as results are outlined in [State-backed IO Report.pdf](State-backed IO Report.pdf).
 
 
 ## Discussion and Conclusion
