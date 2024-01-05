@@ -7,11 +7,11 @@ State-backed information operations (IO) involve coordinated efforts, including 
 
 ## Approach
 
-Our project's primary goal is to create a classification model to identify state-backed information operations on Twitter. We utilize existing pretrained transformer-based models to establish a generalizable approach for detecting suspicious content associated with such operations. Additionally, we aim to implement clustering and narrative extraction techniques to summarize and identify overarching themes within state-backed information operations.
+The primary goal of the project is to create a classification model to identify state-backed information operations on Twitter. We utilize existing pretrained transformer-based models to establish a generalizable approach for detecting suspicious content associated with such operations. Additionally, we aim to implement clustering and narrative extraction techniques to summarize and identify overarching themes within state-backed information operations.
 
 ## Experiments
 
-We fine-tune Ada and BERT using two approaches and benchmark their performance across four metrics. Additionally, we simulate a real-world scenario through a third approach to evaluate BERT's performance. We experiment with various data preprocessing methods and record their impact on BERT. Details of our training data construction and experimental setup, as well as results are outlined in [State-backed IO Report.pdf](State-backed%20IO%20Report.pdf).
+Ada is fine-tuned using two approaches and benchmarked across four metrics.  Details of our training data construction and experimental setup, as well as results are outlined in [State-backed IO Report.pdf](State-backed%20IO%20Report.pdf). Further detail on the code can be found in [State-backed IO Classification.ipynb](State-backed%20IO%20Classification.ipynb)
 
 
 ## Discussion and Conclusion
