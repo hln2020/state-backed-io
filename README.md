@@ -1,16 +1,9 @@
 # State-Backed Information Operations Analysis Using Pre-trained Transformer-Based Models
 
-## Abstract
-
-Leveraging pretrained transformer-based models and clustering techniques, we establish a generalizable approach for detecting suspicious content and identifying state-backed information operations (IO) on Twitter. Additionally, we implement narrative extraction techniques to summarize and identify overarching themes within state-backed IOs. Results show that content pertaining to IO accounts is noisy, warranting further investigation beyond tweet content to detect information operations. Nonetheless, finetuning pre-trained models on more IOs can lead to an increase in model performance.
 
 ## Introduction
 
 State-backed information operations (IO) involve coordinated efforts, including fake accounts, disinformation, propaganda, and deceptive tactics, orchestrated by governments or state-sponsored entities. They aim to shape narratives, create confusion, and manipulate perceptions, especially on social media and online platforms. This tool has become prominent for state actors to influence public opinion and advance geopolitical interests. Understanding the scope and methods of state-backed information operations is crucial for safeguarding online discourse integrity and protecting the democratic foundations of the digital age.
-
-## Related Work
-
-Related work on the topic of state-backed information operations includes a range of studies published since Twitter launched their first archive of foreign information operations in 2018. Barrie et al. [1] examined domestic engagement with IO accounts in Saudi Arabia, revealing that domestic engagement with IO tweets was significantly lower than that with the average Saudi Twitter user. DiResta et al. [2] delved into the activity analysis and narrative extraction of a state-backed operation attributed to the Saudi Arabian digital marketing firm Smaat, uncovering tweets criticizing Qatar’s government and tweets criticizing Jamal Khashoggi, among other themes. These studies inspire our research by highlighting the importance of understanding state-sponsored information operations and how they shape digital-age narratives. 
 
 ## Approach
 
