@@ -1,6 +1,4 @@
-# Project Title
-
-**Detecting State-Backed Information Operations on Twitter**
+# State-Backed Information Operations Analysis Using Pre-trained Transformer-Based Models
 
 ## Abstract
 
@@ -22,24 +20,12 @@ Our project's primary goal is to create a classification model to identify state
 
 We fine-tune Ada and BERT using two approaches and benchmark their performance across four metrics. Additionally, we simulate a real-world scenario through a third approach to evaluate BERT's performance. We experiment with various data preprocessing methods and record their impact on BERT. Details of our training data construction and experimental setup are outlined below.
 
-### Data
 
-1. **Positive class:** Since 2018, the Twitter Moderation Research Consortium [3] has released a cohort of datasets on potential foreign information operations. These operations consist of persistent platform manipulation campaigns in violation of Twitter’s platform manipulation and spam policy. Manipulation that Twitter can reliably attribute to a government or state-linked actor is considered an information operation (IO). Tweets from the following operations constitute our positive class:
+## Discussion and Conclusion
 
-   - Russia East Africa (REA) (December 2021) - 50 Accounts 
-   - People’s Republic of China - Xinjiang (CNHU) (December 2021) - 2048 Accounts
-   - Russia IRA North Africa (RNA) (December 2021) - 16 Accounts
+In conclusion, our results show that content pertaining to IO accounts is noisy, warranting further investigation beyond their tweet content to detect such operations. Our model performance in IO content detection improves when they are trained on two IOs (REA and CNHU) compared to one (REA), though they are more effective at identifying non-IO tweets than IO tweets, as indicated by the relatively high precision combined with low recall. This can be attributed to the noisy content of the IO data, which includes many trivial tweets.
 
-   The datasets encompass multiple languages, numerous URLs, a high volume of retweets, and special characters like iOS emojis and text-based emoticons. Despite some tweets being noise without clear narratives, we retain them for the project, assuming all tweets are associated with IOs due to the challenge of removing random tweets.
+To enhance our models, we need more diverse training data that better aligns with the test data distribution, or a larger dataset containing a sufficient number of tweets in various languages, enabling the model to learn and generalize to unseen tweets. In general, many factors outside of tweet content could impact the detection of information operations, such as account activity, spam level, interactions with other accounts, among others.
 
-2. **Negative class:** We use the following datasets to construct our negative class:
-
-   - Random Twitter Dataset [4]: This dataset consists of 1.6 million random tweets, mainly in English. Its diverse content reflects the varied nature of user-generated content. The tweets from this dataset are used as negative, non-IO related tweets, representing informal, personal content.
-   - Diplomatic Discourse Online - Twitter [5]: This dataset consists of tweets from 500+ Russian and Chinese diplomats in multiple languages. They serve as a political, non-IO focused resource. We combine these tweets with tweets from the Random Twitter Dataset to form our negative class.
-
-   The non-IO data from the Random Twitter Dataset [4] is entirely in English. While it shares characteristics of tweets such as hashtags and handlers, it contains fewer emojis and URLs. In contrast, the non-IO data from Diplomatic Discourse Online - Twitter [5] more closely resembles IO data, containing multiple languages, numerous emojis, and URLs.
-
-### Data Preprocessing
-
-In data preprocessing, we initially perform a three-step procedure on both the training and test datasets: dropping NaNs from tweets, removing duplicate tweets, and eliminating single and double quotes. We report the performance of both Ada and BERT using this basic preprocessing framework. Additionally, an advanced preprocessing procedure is applied, manipulating handlers, emojis, URLs, and retweet signals. For the training dataset, near-duplicate removal using TF-IDF and MinHash is also employed. We report and compare BERT's performance between these approaches.
+Future work may consider these aspects in their IO detection analysis for improved performance.
 
